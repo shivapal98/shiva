@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Kumar Pallav",
+        "website": "http://kumarpallav.com",
+        "email": "me@kumarpallav.com",
+        "email2": "pforpallav@gmail.com",
+        "phone": "+1-xxx-xxx-xxxx",
+        "linkedin":"https://www.linkedin.com/in/kumar-pallav-156a1657/",
+        "facebook":"https://www.facebook.com/pforpallav",
+        "github":"https://github.com/pforpallav",
+        "languages": [
+            {
+                "language": "C++"
+            },
+            {
+                "language": "C\\#"
+            },
+            {
+                "language": "JavaScript"
+            },
+            {
+                "language": "Java"
+            },
+            {
+                "language": "C"
+            }
+        ],
+        "technologies": [
+            {
+                "technology": "NodeJs"
+            },
+            {
+                "technology": "UWP"
+            },
+            {
+                "technology": "Win32"
+            }
+        ]
+    }
+]
