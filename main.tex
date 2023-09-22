@@ -5,7 +5,7 @@
 %-------------------------
 
 \documentclass[letterpaper,11pt]{article}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -70,9 +70,11 @@
 % Header section
 \begin{center}
     \textbf{\Huge Shiva Pal}\\
+    \vspace{15pt}
     \href{mailto:shivapalsinghjadaun@gmail.com}{\faEnvelope\ shivapalsinghjadaun@gmail.com} \,|\, 
     \href{https://www.linkedin.com/in/shivapal/}{\faLinkedin\ linkedin.com/in/shivapal} \,|\, 
-    \href{https://shivapal98.github.io/shiva/}{\faGlobe\ shivapal98.github.io/shiva/}
+    \href{https://shivapal98.github.io/shiva/}{\faGlobe\ Github} \,|\,
+    \href{+91-7014944922}{\faMobile\ +91-7014944922}
 \end{center}
 
 % Summary section
@@ -80,21 +82,24 @@
 Dedicated and skilled DevOps Engineer and Certified Security Engineer v2 with experience in architecting and managing Linux-based servers, working with multiple cloud providers, and Kubernetes clusters. Proficient in automation scripting and ensuring high uptime and fault tolerance. Skilled in various cloud platforms, technologies, and monitoring tools.
 
 % Experience section
-\resumeSection{Experience}
 \begin{itemize}[left=0pt]
+    \let\olditem\item % Store the current \item command
+    \renewcommand{\item}[1][]{\olditem} % Redefine \item to do nothing
     \resumeSubHeading{Growth Natives (Product)}{Mohali, Punjab}{Senior DevOps Engineer}{Apr 2021 - Present}
     \begin{itemize}
-        \resumeItem{Utilized IAC tools like Terraform and Pulumi to create cloud infrastructures.}
-        \resumeItem{Created CI/CD pipelines for fully automated code deployment.}
-        \resumeItem{Built high-availability infrastructure using AWS EKS, AWS ECS, GCP GKE, Terraform, and HaProxy.}
-        \resumeItem{Worked with HaProxy Load Balancer and created service discovery for ECS.}
-        \resumeItem{Designed resilient infrastructure on Google Cloud following best practices.}
-        \resumeItem{Deployed infrastructures on Digital Ocean using Pulumi, including Kubernetes, MySQL, MongoDB, Helm charts, Ingress controller, and Logging and monitoring stack.}
-        \resumeItem{Implemented monitoring and logging stack with Grafana, Loki, Fluentd, and Prometheus.}
-        \resumeItem{Automated daily tasks through scripting and addressed vulnerabilities in mailing solutions like Gmail and Outlook.}
-        \resumeItem{Secured and rotated credential secrets using VAULT.}
+        \item Utilized \textbf{IAC} tools like Terraform and Pulumi to create cloud infrastructures.
+        \item Created \textbf{CI/CD} pipelines for fully automated code deployment.
+        \item Built high-availability infrastructure using AWS EKS, AWS ECS, GCP GKE, Terraform, and HaProxy.
+        \item Worked with \textbf{HaProxy} Load Balancer and created service discovery for ECS.
+        \item Designed resilient infrastructure on Google Cloud following best practices.
+        \item Deployed infrastructures on Digital Ocean using Pulumi, including Kubernetes, MySQL, MongoDB, Helm charts, Ingress controller, and Logging and monitoring stack.
+        \item Implemented monitoring and logging stack with Grafana, Loki, Fluentd, and Prometheus.
+        \item Automated daily tasks through scripting and addressed vulnerabilities in mailing solutions like Gmail and Outlook.
+        \item Secured and rotated credential secrets using \textbf{VAULT}.
     \end{itemize}
-    
+\end{itemize}
+
+
     % Add more experiences as needed
 \end{itemize}
 
@@ -112,11 +117,11 @@ Dedicated and skilled DevOps Engineer and Certified Security Engineer v2 with ex
 % Certifications section
 \resumeSection{Certifications}
 \begin{itemize}[left=0pt]
-    \resumeSubItem{Security Intelligence Engineer, Google Cloud Essential}{} 
+    \item {Security Intelligence Engineer, Google Cloud Essential}{}
 \end{itemize}
+
 
 % Education section
 \resumeSection{Education}
 \resumeSubHeading{Chandigarh University}{Mohali, Punjab}{Bachelor of Engineering in Computer Science}{Aug. 2017 – July. 2021}
-
 \end{document}
